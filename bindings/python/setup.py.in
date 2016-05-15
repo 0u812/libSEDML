@@ -13,7 +13,7 @@ setup(name='libsedml',
     },
     package_data={
         # add dll, won't hurt unix, not there anyway
-        "" : ["*.so", "*.dll", "*.txt", "*.dylib"],
+        "" : ["*.so", "*.dll", "*.txt", "*.dylib"]
     },
     extra_path="libsedml",
     install_path_file=1
