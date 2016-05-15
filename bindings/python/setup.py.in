@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+
+from distutils.core import setup
+
+setup(name='libsedml',
+    author='Frank Bergmann, J Kyle Medley',
+    author_email='jkm@nope.edu',
+    version='@PACKAGE_VERSION@',
+    description='SED-ML library',
+    packages=[''],
+    package_dir={
+        "" : "lib/python2.7/site-packages/libsedml"
+    },
+    package_data={
+        # add dll, won't hurt unix, not there anyway
+        "" : ["*.so", "*.dll", "*.txt", "*.dylib"],
+    },
+    extra_path="libsedml",
+    #extra_path=None,
+    install_path_file=1
+)

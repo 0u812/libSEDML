@@ -1,0 +1,13 @@
+package:
+  name: libsedml
+  version: @PACKAGE_VERSION@
+
+requirements:
+  build:
+    - python
+    - setuptools
+
+extra:
+  maintainers:
+   - Frank Bergmann
+   - J Kyle Medley
