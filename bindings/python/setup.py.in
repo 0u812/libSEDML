@@ -16,6 +16,5 @@ setup(name='libsedml',
         "" : ["*.so", "*.dll", "*.txt", "*.dylib"],
     },
     extra_path="libsedml",
-    #extra_path=None,
     install_path_file=1
 )
