@@ -240,6 +240,11 @@ LIBSEDML_CPP_NAMESPACE_USE
 %ignore XMLOutputStream::writeAttribute(const std::string&, const unsigned int&);
 %ignore XMLOutputStream::writeAttribute(const XMLTriple&,   const unsigned int&);
 
+%ignore Model::addConstraint;
+%ignore Model::getConstraint;
+%ignore Model::createConstraint;
+%ignore Model::removeConstraint;
+
 /**
  * The following methods will create new objects.  To prevent memory
  * leaks we must inform SWIG of this.
@@ -450,6 +455,7 @@ typedef std::vector<SedError> SedErrorStdVector;
 %include sbml/SBase.h
 %ignore convertToL2Strict;
 %include sbml/Model.h
+
 %include sbml/SBMLNamespaces.h
 %include sbml/annotation/CVTerm.h
 %include sbml/annotation/Date.h 
