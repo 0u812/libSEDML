@@ -176,7 +176,7 @@ if (LIBSEDML_SHARED_VERSION)
                       VERSION ${LIBSEDML_VERSION_MAJOR}.${LIBSEDML_VERSION_MINOR}.${LIBSEDML_VERSION_PATCH})
 endif()
 
-target_link_libraries(${LIBSEDML_LIBRARY} ${LIBSBML_LIBRARY} ${LIBNUML_LIBRARY} ${EXTRA_LIBS})
+target_link_libraries(${LIBSEDML_LIBRARY} ${LIBSBML_LIBRARY}-static ${LIBNUML_LIBRARY}-static ${EXTRA_LIBS})
 
 # Create the exported target
 INSTALL(TARGETS ${LIBSEDML_LIBRARY} 
@@ -210,7 +210,7 @@ if (WIN32 AND NOT CYGWIN)
   set_target_properties(${LIBSEDML_LIBRARY}-static PROPERTIES COMPILE_DEFINITIONS "LIBSEDML_STATIC=1")
 endif(WIN32 AND NOT CYGWIN)
 
-target_link_libraries(${LIBSEDML_LIBRARY}-static ${LIBSBML_LIBRARY} ${LIBNUML_LIBRARY} ${EXTRA_LIBS})
+target_link_libraries(${LIBSEDML_LIBRARY}-static ${LIBSBML_LIBRARY}-static ${LIBNUML_LIBRARY}-static ${EXTRA_LIBS})
 
 # Create the exported target for the static library
 INSTALL(TARGETS ${LIBSEDML_LIBRARY}-static 
