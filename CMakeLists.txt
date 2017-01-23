@@ -234,6 +234,7 @@ endif()
 set (LIBSEDML_USE_CPP_NAMESPACE 0)
 if(WITH_CPP_NAMESPACE)
     add_definitions(-DLIBSEDML_USE_CPP_NAMESPACE)
+    add_definitions(-DLIBNUML_USE_CPP_NAMESPACE)
     set (LIBSEDML_USE_CPP_NAMESPACE 1)
 endif()
 

@@ -348,11 +348,13 @@ typedef CLASS_OR_STRUCT SedSlice                     SedSlice_t;
 
 LIBSEDML_CPP_NAMESPACE_END
 
-LIBNUML_CPP_NAMESPACE_BEGIN
+//LIBNUML_CPP_NAMESPACE_BEGIN
+namespace libnuml {
 
 typedef CLASS_OR_STRUCT DimensionDescription                     DimensionDescription_t;
 
-LIBNUML_CPP_NAMESPACE_END
+}
+//LIBNUML_CPP_NAMESPACE_END
 
 LIBSBML_CPP_NAMESPACE_BEGIN
 
